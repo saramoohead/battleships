@@ -9,7 +9,6 @@ describe Board do
   end
 
   it 'is filled with cells' do
-    p board.cells
     expect(board.cells.count).to eq(1)
   end
 

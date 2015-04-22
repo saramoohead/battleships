@@ -4,8 +4,8 @@ class Board
 
   def initialize size
     @size = size
-    @cells = []
-    @size.times { @cells << Cell.new }
+    @cells = Array.new(@size) { Cell.new }
+    # @size.times { @cells << Cell.new }
   end
 
 end
