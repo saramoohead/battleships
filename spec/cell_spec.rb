@@ -22,4 +22,8 @@ describe Cell do
     expect(cell.is_hit).to eq(true)
   end
 
+  it 'has a default coordinate "to be set by board"' do
+    expect(cell.coordinate).to eq('to be set by board')
+  end
+
 end

@@ -12,4 +12,11 @@ describe Board do
     expect(board.cells.count).to eq(1)
   end
 
+  it 'gives each cell a coordinate' do
+    board.name
+    first_cell = board.cells[0]
+    p first_cell
+    expect(first_cell.coordinate).to eq('A1')
+  end
+
 end
