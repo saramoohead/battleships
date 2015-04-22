@@ -10,15 +10,10 @@ class Board
   end
 
   def build_grid
+    # only one row
     (1..@size).each do |n|
       @grid.[]=(('A' + n.to_s), Cell.new)
     end
-    p '*' * 20
-    p @grid
   end
-
-  # def place ship, coordinate
-  #   p @grid
-  # end
 
 end
