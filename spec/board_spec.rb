@@ -15,13 +15,9 @@ describe Board do
   end
 
   # must test for larger board, as your formula breaks
-  xit 'gives each cell a coordinate' do
+  it 'gives each cell a coordinate' do
     board.build_grid
-    first_cell = board.grid[0]
-    p '*' * 20
-    p 'In the test'
-    p first_cell
-    expect(first_cell.coordinate).to eq('A1')
+    expect(board.grid).to have_key('A1')
   end
 
   xit 'places ships into cells' do
