@@ -1,15 +1,20 @@
 class Cell
 
-  attr_reader :holds
+  attr_reader :holds, :is_hit
 
-  DEFAULT = 'water'
+  DEFAULT_HOLDING = 'water'
 
   def initialize
-    @holds = DEFAULT
+    @holds = DEFAULT_HOLDING
+    @is_hit = false
   end
 
   def accept item
     @holds = item
+  end
+
+  def hit
+    @is_hit = true
   end
 
 end
