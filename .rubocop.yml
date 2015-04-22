@@ -1,0 +1,15 @@
+EmptyLinesAroundBlockBody:
+  Enabled: false
+Documentation:
+  Enabled: false
+Style/MethodDefParentheses:
+  Enabled: false
+Metrics/LineLength:
+  Max: 110
+Style/EmptyLinesAroundClassBody:
+  Description: Keeps track of empty lines around class bodies.
+  Enabled: true
+  EnforcedStyle: empty_lines
+  SupportedStyles:
+  - empty_lines
+  - no_empty_lines  
